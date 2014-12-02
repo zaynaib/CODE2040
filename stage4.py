@@ -24,5 +24,5 @@ totalTime = int(t_in_seconds )+ int(interval)
 myTime = datetime.datetime.fromtimestamp(totalTime).isoformat()
 key1={"datestamp": myTime, "token":"24DVHp6MNU"}
 key=json.dumps(key1)
-reversePost2 = requests.post('http://challenge.code2040.org/api/validateprefix', data=key)
+reversePost2 = requests.post('http://challenge.code2040.org/api/validatetime', data=key)
 reversePost2.text	
