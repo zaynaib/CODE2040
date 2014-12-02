@@ -16,11 +16,15 @@ url = 'http://challenge.code2040.org/api/haystack'
 data = '{"token": "24DVHp6MNU"}'
 needleRequests=requests.post(url, data=data)
 hay = json.loads(needleRequests.text)
+'''
+Both haystack and needle have the same key.In order to access the values of the haystack array and the needle array
+I used the .get method.
+'''
 stack = hay["result"].get("haystack") 
-needle = str(hay["result"].get("needle"))
+needle = str(hay["result"].get("needle")) #turned needle value into a string so with will be easy to search the array
 needleLoca =0
-for s in stack:
-    if needle in str(s):
+for s in stack: #loop through the haystack array
+    if needle in str(s): 
         needleLoca = stack.index(s)
 		
 key1={"needle": needleLoca, "token":"24DVHp6MNU"}
