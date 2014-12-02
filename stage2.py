@@ -17,7 +17,7 @@ data = '{"token": "24DVHp6MNU"}'
 needleRequests=requests.post(url, data=data)
 hay = json.loads(needleRequests.text)
 '''
-Both haystack and needle have the same key.In order to access the values of the haystack array and the needle array
+Both haystack and needle have the same dictionary key.In order to access the values of the haystack array and the needle array
 I used the .get method.
 '''
 stack = hay["result"].get("haystack") 
