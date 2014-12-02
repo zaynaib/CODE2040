@@ -4,6 +4,11 @@ Stage IV: The dating game
 
 The API will again give you a dictionary. The value for datestamp is a string, formatted as an ISO 8601 datestamp.
 The value for interval is a number of seconds.
+
+This challenge was very tricky for me. I have rarely experimented with dates in programming. This is my first time doing it in
+python. I retreive the values turn them into strings. For datestamp I converted to seconds in order to make it easier for me
+to add time. I cast datestamp and interval information as intergers in order to add them.  Changed the seconds into
+at datestamp and tried to formatit in isoformat. I tried figuring out formatting the mircoseconds. Still working on it.
 '''
 
 import dateutil.parser as dp
