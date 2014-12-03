@@ -24,9 +24,6 @@ values = json.loads(preFixRequests.text)
 preList = values["result"].get("array") 
 preWord = str(values["result"].get("prefix"))
 
-
-
-
 for i in range (0, len(preList)):
     preList[i] = str(preList[i])
     
