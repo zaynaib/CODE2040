@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''
 Stage II: Needle in a haystack
 ================================
