@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''
 Stage IV: The dating game
 ================================
