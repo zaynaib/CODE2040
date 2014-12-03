@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''
 Stage I: Reverse a string
 '''
